@@ -3,6 +3,8 @@
 //We inport some libraries first. These are just some predefined code segments
 #include <iostream>
 #include <cmath>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 
 int main(){
@@ -22,5 +24,16 @@ int main(){
 	
 	int numEggs = 3;
 	cout << static_cast<int>(numEggs * 1.5) << endl;
-	cout << floor(numEggs * 1.5) << endl;
+	//cout << floor(numEggs * 1.5) << endl;
+	
+	cout << sqrt(2500) << endl;
+	
+	int dice = 0;
+	//seed the random number
+	srand(time(0));
+	
+	dice = rand();
+	cout << "You rolled a " << dice << endl;
+	dice = ( dice % 6 )+ 1;
+	cout << "You rolled a " << dice << endl;
 }
