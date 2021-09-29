@@ -5,8 +5,14 @@
 using namespace std;
 
 int main(){
+	
+	//lets take an input from user
+	string user;
+	// console in followed by input operator followed by the variable we are going to store the data
+	cout << "Please enter your name:";
+	cin >> user;
 	//cout is short for console output
 	// << output operator
 	// endl adds a new line
-	cout << "Hello World!" << endl;
+	cout << "Hello, " << user << endl;
 }
