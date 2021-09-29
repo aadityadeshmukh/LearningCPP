@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "IDE Setup.md",
-            "mode": "preview"
+            "file": "Hello World.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IDE Setup.md",
+                "file": "Hello World.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +88,9 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
-    "IDE Setup.md",
+    "Hello World.md",
     "Algorithms and Pseudocode.md",
+    "IDE Setup.md",
     "replit.com.md",
     "repl.it.md",
     "Getting started.md",
