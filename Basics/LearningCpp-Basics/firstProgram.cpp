@@ -36,4 +36,39 @@ int main(){
 	cout << "You rolled a " << dice << endl;
 	dice = ( dice % 6 )+ 1;
 	cout << "You rolled a " << dice << endl;
+	
+	switch(dice){
+		 case 1:
+		 	{
+		 		cout << "One" << endl;
+		 		break;
+			 }
+			 case 2:
+		 	{
+		 		cout << "Two" << endl;
+		 		break;
+			 }
+			 case 3:
+		 	{
+		 		cout << "Three" << endl;
+		 		break;
+			 }
+			 case 4:
+		 	{
+		 		cout << "Four" << endl;
+		 		break;
+			 }
+			 case 5:
+		 	{
+		 		cout << "Five" << endl;
+		 		break;
+			 }
+			 case 6:
+		 	{
+		 		cout << "Six" << endl;
+		 		break;
+			 }
+			 default: 
+			 	break;
+	}
 }
