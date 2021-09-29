@@ -27,25 +27,44 @@ int main(){
 	chipsInPile = (rand() % MAX_PILE) + 1;
 	cout << "The game starts with: " << chipsInPile << " chips in pile." << endl;
 	
-	
-	// draw a random number of chips from the pile with max per turn criterion applied
-	while(chipsInPile > 0){
-		cout << chipsInPile;
+	while(gameOver == false){
 		int maxPerTurn = chipsInPile * MAX_PER_TURN;
-		cout << "Each player can take: " << maxPerTurn << endl;
-		if(player1Turn)
-		{
-			cout << "Player 1 selects: ";
-			player1Turn = ! player1Turn;
-		}
-		else
-		{
-			cout << "Player 2 selects: ";
-			player1Turn = ! player1Turn;
-		}
-		cin >> chipsTaken;
+		cout << "Each player can take: ";
+		if( maxPerTurn == 0)
+			cout << 1 << endl;
+		else 
+			cout << maxPerTurn << endl;
+			
+		do{
+			if(player1Turn)
+			{
+				cout << playerNames[0] << " selects: ";
+			}
+			else
+			{
+				cout << playerNames[1] << " selects: ";
+			}
+			cin >> chipsTaken;
+		}while((chipsTaken > maxPerTurn) && (chipsInPile > 1));
+		
 		
 		chipsInPile = chipsInPile - chipsTaken;
+		
+		cout << "Chips left in pile: " << chipsInPile << endl;
+		
+		if(chipsInPile == 0){
+			gameOver = true;
+			if(player1Turn)
+			{
+				cout << "Winner: " << playerNames[1] << endl;
+			}
+			else
+			{
+				cout << "Winner: " << playerNames[0] << endl;
+			}
+		}
+		else 
+			player1Turn = !player1Turn;
 		
 	}
 	
