@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Constants.md",
+            "file": "Arrays.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Constants.md",
+                "file": "Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,12 +88,12 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
+    "Arrays.md",
     "Constants.md",
     "Storage of data in memory.md",
     "Declaration of variables.md",
     "Data Representation.md",
     "Simple Data types.md",
-    "Arrays.md",
     "C++.md",
     "Getting started.md",
     "Untitled.md",
