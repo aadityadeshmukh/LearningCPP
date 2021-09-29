@@ -30,8 +30,13 @@ int main(){
 	cout << "Each player can take: " << maxPerTurn << endl;
 	
 	// draw a random number of chips from the pile with max per turn criterion applied
-	
-	int player1Sel = (rand() % maxPerTurn) + 1;
-	cout << "Player 1 selects: " << player1Sel << endl;
+	if(player1Turn)
+	{
+		cout << "Player 1 selects: ";
+	}
+	else
+	{
+		cout << "Player 2 selects: ";
+	}
 	
 }

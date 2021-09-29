@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Arrays.md",
+            "file": "Switch.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Arrays.md",
+                "file": "Switch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
+    "Switch.md",
+    "Flow Of Control.md",
+    "Conditional check.md",
+    "Declaration of variables.md",
+    "If.md",
+    "Untitled.md",
+    "Data Representation.md",
     "Arrays.md",
     "Constants.md",
-    "Storage of data in memory.md",
-    "Declaration of variables.md",
-    "Data Representation.md",
-    "Simple Data types.md",
-    "C++.md",
-    "Getting started.md",
-    "Untitled.md",
-    "Hello World.md"
+    "Storage of data in memory.md"
   ]
 }
