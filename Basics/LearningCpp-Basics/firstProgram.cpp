@@ -71,4 +71,11 @@ int main(){
 			 default: 
 			 	break;
 	}
+	
+	int blue = 6;
+	
+	do{
+		cout << blue << endl;
+		blue++;
+	}while(blue < 8);
 }
