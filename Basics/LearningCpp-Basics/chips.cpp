@@ -6,6 +6,7 @@
 using namespace std;
 
 const int MAX_PILE = 100;
+const float MAX_PER_TURN = 0.5;
 int main(){
 	
 	// Game of chips
@@ -19,5 +20,6 @@ int main(){
 	
 	chipsInPile = (rand() % MAX_PILE) + 1;
 	cout << "The game starts with: " << chipsInPile << " chips in pile." << endl;
+	cout << "Each player can take: " << static_cast<int> (chipsInPile * MAX_PER_TURN) << endl;
 	
 }
