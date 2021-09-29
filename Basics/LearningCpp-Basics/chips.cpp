@@ -5,6 +5,7 @@
 
 using namespace std;
 
+const int MAX_PILE = 100;
 int main(){
 	
 	// Game of chips
@@ -16,7 +17,7 @@ int main(){
 	// generate a random number of starting chips
 	srand(time(0)); //seed
 	
-	chipsInPile = (rand() % 100) + 1;
+	chipsInPile = (rand() % MAX_PILE) + 1;
 	cout << "The game starts with: " << chipsInPile << " chips in pile." << endl;
 	
 }
