@@ -2,6 +2,7 @@
 /*This is also a comment*/
 //We inport some libraries first. These are just some predefined code segments
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main(){
@@ -21,4 +22,5 @@ int main(){
 	
 	int numEggs = 3;
 	cout << static_cast<int>(numEggs * 1.5) << endl;
+	cout << floor(numEggs * 1.5) << endl;
 }
