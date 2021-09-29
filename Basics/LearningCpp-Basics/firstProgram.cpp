@@ -14,5 +14,8 @@ int main(){
 	//cout is short for console output
 	// << output operator
 	// endl adds a new line
-	cout << "Hello, " << user << endl;
+	cout << "Hello, " << user << " Please enter your favourite food:";
+	string faveFood;
+	cin >> faveFood;
+	cout << "Woah! My favourite food is " << faveFood << " too" << endl;
 }
