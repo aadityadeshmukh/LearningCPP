@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
-            "mode": "source"
+            "file": "IDE Setup.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "IDE Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,11 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
+    "IDE Setup.md",
+    "Algorithms and Pseudocode.md",
+    "replit.com.md",
+    "repl.it.md",
+    "Getting started.md",
     "Untitled.md"
   ]
 }
