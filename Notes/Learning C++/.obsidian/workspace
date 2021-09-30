@@ -7,8 +7,11 @@
         "id": "166ce15c68b43a62",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Calling, prototypes, defining functions.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -49,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "8a99ebf5e94057a4",
@@ -66,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Calling, prototypes, defining functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,15 +88,15 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
+    "Calling, prototypes, defining functions.md",
+    "Functions.md",
+    "Function parameters.md",
+    "Creating a function.md",
+    "What is a function.md",
+    "Untitled.md",
+    "C++.md",
     "Algorithms and Pseudocode.md",
     "Do-While.md",
-    "Flow Of Control.md",
-    "While.md",
-    "For.md",
-    "Switch.md",
-    "Conditional check.md",
-    "Declaration of variables.md",
-    "If.md",
-    "Untitled.md"
+    "Flow Of Control.md"
   ]
 }

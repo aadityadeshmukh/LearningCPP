@@ -7,6 +7,8 @@ using namespace std;
 
 const int MAX_PILE = 100;
 const float MAX_PER_TURN = 0.5;
+
+string FindPlayerName(string[], bool);
 int main(){
 	
 	// Game of chips
@@ -38,14 +40,7 @@ int main(){
 				cout << maxPerTurn << endl;
 				
 			do{
-				if(player1Turn)
-				{
-					cout << playerNames[0] << " selects: ";
-				}
-				else
-				{
-					cout << playerNames[1] << " selects: ";
-				}
+				cout << FindPlayerName(playerNames, player1Turn) << " selects: ";
 				cin >> chipsTaken;
 			}while((chipsTaken > maxPerTurn) && (chipsInPile > 1));
 			
@@ -78,6 +73,15 @@ int main(){
 	}while (playAgain != 2);
 	
 	
-	
-	
 }
+
+string FindPlayerName(string arrPlayers[], bool playerTurn)
+{
+	if(playerTurn)
+		return arrPlayers[0];
+	else
+		return arrPlayers[1];
+}
+
+
+
