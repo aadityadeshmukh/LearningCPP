@@ -10,14 +10,13 @@ const float MAX_PER_TURN = 0.5;
 
 string FindPlayerName(string[], bool);
 void GetPlayerNames(string []);
-int PlayRound(int , string[], bool);
+void PlayRound(int &, string[], bool);
 int main(){
 	
 	// Game of chips
 	bool player1Turn = true;
 	bool gameOver = false;
 	int chipsInPile = 0;
-	int chipsTaken = 0;
 	
 	string playerNames[2];
 	GetPlayerNames(playerNames);
@@ -31,23 +30,7 @@ int main(){
 		cout << "The game starts with: " << chipsInPile << " chips in pile." << endl;
 		
 		while(gameOver == false){
-			/*int maxPerTurn = chipsInPile * MAX_PER_TURN;
-			cout << "Each player can take: ";
-			if( maxPerTurn == 0)
-				cout << 1 << endl;
-			else 
-				cout << maxPerTurn << endl;
-				
-			do{
-				cout << FindPlayerName(playerNames, player1Turn) << " selects: ";
-				cin >> chipsTaken;
-			}while((chipsTaken > maxPerTurn) && (chipsInPile > 1));
-			
-			
-			chipsInPile = chipsInPile - chipsTaken;
-			
-			cout << "Chips left in pile: " << chipsInPile << endl;*/
-			chipsInPile = PlayRound(chipsInPile, playerNames, player1Turn);
+			PlayRound(chipsInPile, playerNames, player1Turn);
 			
 			if(chipsInPile == 0){
 				gameOver = true;
@@ -90,7 +73,7 @@ void GetPlayerNames(string arrNames[]){
 	cin >> arrNames[1];
 }
 
-int PlayRound(int chipsInPile , string arrPlayers[], bool player1Turn){
+void PlayRound(int & chipsInPile , string arrPlayers[], bool player1Turn){
 	int chipsTaken;
 	int maxPerTurn = chipsInPile * MAX_PER_TURN;
 	cout << "Each player can take: ";
@@ -108,6 +91,5 @@ int PlayRound(int chipsInPile , string arrPlayers[], bool player1Turn){
 	chipsInPile = chipsInPile - chipsTaken;
 	
 	cout << "Chips left in pile: " << chipsInPile << endl;
-	return chipsInPile;
 }
 
