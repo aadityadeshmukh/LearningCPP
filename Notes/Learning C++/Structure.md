@@ -9,3 +9,4 @@
 	-  call using `<name> varName;`
 	-  you cannot assign a value to the entire struct
 	-  you cannot print an entire struct
+	-  no functions in a structcan a c++ 
