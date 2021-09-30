@@ -21,52 +21,63 @@ int main(){
 	cout << "Player 2: Enter your name:";
 	cin >> playerNames[1];
 	
-	// generate a random number of starting chips
-	srand(time(0)); //seed
-	
-	chipsInPile = (rand() % MAX_PILE) + 1;
-	cout << "The game starts with: " << chipsInPile << " chips in pile." << endl;
-	
-	while(gameOver == false){
-		int maxPerTurn = chipsInPile * MAX_PER_TURN;
-		cout << "Each player can take: ";
-		if( maxPerTurn == 0)
-			cout << 1 << endl;
-		else 
-			cout << maxPerTurn << endl;
+	int playAgain = 1;
+	do{
+		// generate a random number of starting chips
+		srand(time(0)); //seed
+		
+		chipsInPile = (rand() % MAX_PILE) + 1;
+		cout << "The game starts with: " << chipsInPile << " chips in pile." << endl;
+		
+		while(gameOver == false){
+			int maxPerTurn = chipsInPile * MAX_PER_TURN;
+			cout << "Each player can take: ";
+			if( maxPerTurn == 0)
+				cout << 1 << endl;
+			else 
+				cout << maxPerTurn << endl;
+				
+			do{
+				if(player1Turn)
+				{
+					cout << playerNames[0] << " selects: ";
+				}
+				else
+				{
+					cout << playerNames[1] << " selects: ";
+				}
+				cin >> chipsTaken;
+			}while((chipsTaken > maxPerTurn) && (chipsInPile > 1));
 			
-		do{
-			if(player1Turn)
-			{
-				cout << playerNames[0] << " selects: ";
+			
+			chipsInPile = chipsInPile - chipsTaken;
+			
+			cout << "Chips left in pile: " << chipsInPile << endl;
+			
+			if(chipsInPile == 0){
+				gameOver = true;
+				if(player1Turn)
+				{
+					cout << "Winner: " << playerNames[1] << endl;
+				}
+				else
+				{
+					cout << "Winner: " << playerNames[0] << endl;
+				}
 			}
-			else
-			{
-				cout << playerNames[1] << " selects: ";
-			}
-			cin >> chipsTaken;
-		}while((chipsTaken > maxPerTurn) && (chipsInPile > 1));
-		
-		
-		chipsInPile = chipsInPile - chipsTaken;
-		
-		cout << "Chips left in pile: " << chipsInPile << endl;
-		
-		if(chipsInPile == 0){
-			gameOver = true;
-			if(player1Turn)
-			{
-				cout << "Winner: " << playerNames[1] << endl;
-			}
-			else
-			{
-				cout << "Winner: " << playerNames[0] << endl;
-			}
+			else 
+				player1Turn = !player1Turn;
+			
 		}
-		else 
-			player1Turn = !player1Turn;
 		
-	}
+		if(gameOver){
+			cout << "Do you want to play again? (yes - 1, no -2):";
+			cin >> playAgain;
+			gameOver = !gameOver;
+		}
+	}while (playAgain != 2);
+	
+	
 	
 	
 }
