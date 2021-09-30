@@ -6,12 +6,17 @@
 
 using namespace std;
 
+struct Players{
+	string name;
+	int numWins;
+};
+
 const int MAX_PILE = 100;
 const float MAX_PER_TURN = 0.5;
 
-string FindPlayerName(string[], bool);
-void GetPlayerNames(string []);
-void PlayRound(int &, string[], bool);
+Players FindPlayer(Players[], bool);
+void GetPlayerNames(Players []);
+void PlayRound(int &, Players[], bool);
 int main(){
 	
 	// Game of chips
@@ -19,8 +24,10 @@ int main(){
 	bool gameOver = false;
 	int chipsInPile = 0;
 	
-	string playerNames[2];
+	Players playerNames[2];
 	GetPlayerNames(playerNames);
+	playerNames[0].numWins = 0;
+	playerNames[1].numWins = 0;
 	
 	ofstream oFile;
 	oFile.open("Tracker.txt", ios::app);
@@ -38,9 +45,12 @@ int main(){
 			
 			if(chipsInPile == 0){
 				gameOver = true;
-				string winner = FindPlayerName(playerNames, !player1Turn) ;
-				cout << "Winner: " << winner << endl;
-				oFile << counter << " " << winner << endl;
+				Players winner = FindPlayer(playerNames, !player1Turn) ;
+				cout << "Winner: " << winner.name << endl;
+				oFile << counter << " " << winner.name << endl;
+				winner.numWins++;
+				oFile << winner.numWins << " " << winner.name << endl;
+				
 			}
 			else 
 				player1Turn = !player1Turn;
@@ -57,7 +67,7 @@ int main(){
 	
 }
 
-string FindPlayerName(string arrPlayers[], bool playerTurn)
+Players FindPlayer(Players arrPlayers[], bool playerTurn)
 {
 	if(playerTurn)
 		return arrPlayers[0];
@@ -65,14 +75,14 @@ string FindPlayerName(string arrPlayers[], bool playerTurn)
 		return arrPlayers[1];
 }
 
-void GetPlayerNames(string arrNames[]){
+void GetPlayerNames(Players arrNames[]){
 	cout << "Player 1: Enter your name:";
-	cin >> arrNames[0];
+	cin >> arrNames[0].name;
 	cout << "Player 2: Enter your name:";
-	cin >> arrNames[1];
+	cin >> arrNames[1].name;
 }
 
-void PlayRound(int & chipsInPile , string arrPlayers[], bool player1Turn){
+void PlayRound(int & chipsInPile , Players arrPlayers[], bool player1Turn){
 	int chipsTaken;
 	int maxPerTurn = chipsInPile * MAX_PER_TURN;
 	cout << "Each player can take: ";
@@ -82,7 +92,8 @@ void PlayRound(int & chipsInPile , string arrPlayers[], bool player1Turn){
 		cout << maxPerTurn << endl;
 		
 	do{
-		cout << FindPlayerName(arrPlayers, player1Turn) << " selects: ";
+		Players selector = FindPlayer(arrPlayers, player1Turn);
+		cout << selector.name << " selects: ";
 		cin >> chipsTaken;
 	}while((chipsTaken > maxPerTurn) && (chipsInPile > 1));
 	
