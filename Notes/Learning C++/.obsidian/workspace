@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Classes.md",
-            "mode": "preview"
+            "file": "Pointers.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Classes.md",
+                "file": "Pointers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
-    "Classes.md",
+    "Pointers.md",
     "Data Structures.md",
+    "Classes.md",
     "Function parameters.md",
     "Structure.md",
     "Untitled.md",
     "Open a Text File to write to.md",
     "Open & Read files.md",
     "File IO.md",
-    "Calling, prototypes, defining functions.md",
-    "Functions.md"
+    "Calling, prototypes, defining functions.md"
   ]
 }

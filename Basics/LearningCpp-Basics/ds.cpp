@@ -47,4 +47,14 @@ int main(){
 	acnt1.Deposit(100.5);
 	cout << acnt1.GetBalance() << endl;
 	
+	int v1 = 0;
+	int *var1;
+	var1 = &v1;
+	
+	cout << &v1 << endl;
+	cout << var1 << endl;
+	
+	*var1 = 99;
+	cout << v1 << endl;
+	cout << *var1 << endl;
 }
