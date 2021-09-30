@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Calling, prototypes, defining functions.md",
+            "file": "Structure.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calling, prototypes, defining functions.md",
+                "file": "Structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
+    "Structure.md",
+    "Untitled.md",
+    "Open a Text File to write to.md",
+    "Open & Read files.md",
+    "File IO.md",
     "Calling, prototypes, defining functions.md",
     "Functions.md",
     "Function parameters.md",
     "Creating a function.md",
-    "What is a function.md",
-    "Untitled.md",
-    "C++.md",
-    "Algorithms and Pseudocode.md",
-    "Do-While.md",
-    "Flow Of Control.md"
+    "What is a function.md"
   ]
 }

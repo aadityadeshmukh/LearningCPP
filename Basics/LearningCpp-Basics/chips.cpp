@@ -2,6 +2,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <fstream>
 
 using namespace std;
 
@@ -21,6 +22,8 @@ int main(){
 	string playerNames[2];
 	GetPlayerNames(playerNames);
 	
+	ofstream oFile;
+	oFile.open("Tracker.txt", ios::app);
 	int playAgain = 1;
 	do{
 		// generate a random number of starting chips
@@ -28,20 +31,16 @@ int main(){
 		
 		chipsInPile = (rand() % MAX_PILE) + 1;
 		cout << "The game starts with: " << chipsInPile << " chips in pile." << endl;
-		
+		int counter = 0;
 		while(gameOver == false){
+			counter++;
 			PlayRound(chipsInPile, playerNames, player1Turn);
 			
 			if(chipsInPile == 0){
 				gameOver = true;
-				if(player1Turn)
-				{
-					cout << "Winner: " << playerNames[1] << endl;
-				}
-				else
-				{
-					cout << "Winner: " << playerNames[0] << endl;
-				}
+				string winner = FindPlayerName(playerNames, !player1Turn) ;
+				cout << "Winner: " << winner << endl;
+				oFile << counter << " " << winner << endl;
 			}
 			else 
 				player1Turn = !player1Turn;
@@ -54,7 +53,7 @@ int main(){
 			gameOver = !gameOver;
 		}
 	}while (playAgain != 2);
-	
+	oFile.close();
 	
 }
 

@@ -5,6 +5,7 @@
 #include <cmath>
 #include <ctime>
 #include <cstdlib>
+#include <fstream>
 using namespace std;
 
 int main(){
@@ -78,4 +79,21 @@ int main(){
 		cout << blue << endl;
 		blue++;
 	}while(blue < 8);
+	
+	ifstream inFile;
+	ofstream oFile;
+	oFile.open("Blah.txt");
+	if(!oFile.fail()){
+		oFile << "Damn!" << endl;
+	}
+	oFile.close();
+	string pass = "";
+	inFile.open("D:\\Code\\LearningCPP\\Basics\\LearningCpp-Basics\\passphrase.txt");
+	if(!inFile.fail()){
+		while(inFile >> pass){
+			cout << pass << endl;
+		}
+		
+	}
+	inFile.close();
 }
