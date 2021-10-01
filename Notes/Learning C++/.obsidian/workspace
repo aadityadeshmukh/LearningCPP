@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linked Lists.md",
+            "file": "C++ Toolchain.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linked Lists.md",
+                "file": "C++ Toolchain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
+    "Untitled.md",
+    "C++.md",
     "Linked Lists.md",
     "Data Structures.md",
     "Pointers.md",
     "Classes.md",
     "Function parameters.md",
     "Structure.md",
-    "Untitled.md",
     "Open a Text File to write to.md",
-    "Open & Read files.md",
-    "File IO.md"
+    "Open & Read files.md"
   ]
 }
