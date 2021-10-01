@@ -5,5 +5,6 @@
 int main()
 {
     puts("Hello, World!");
+    printf("MS version: %d\n", _MSC_VER);
     return 0;
 }
