@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "C++ Toolchain.md",
+            "file": "Arrays.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "array",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "C++ Toolchain.md",
+                "file": "Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +89,15 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
-    "Untitled.md",
-    "C++.md",
-    "Linked Lists.md",
-    "Data Structures.md",
-    "Pointers.md",
-    "Classes.md",
+    "Arrays.md",
     "Function parameters.md",
-    "Structure.md",
-    "Open a Text File to write to.md",
-    "Open & Read files.md"
+    "Pointers.md",
+    "Qualifiers.md",
+    "Anatomy of a C++ program.md",
+    "Identifiers.md",
+    "Getting started.md",
+    "IDE Setup.md",
+    "Untitled.md",
+    "C++.md"
   ]
 }

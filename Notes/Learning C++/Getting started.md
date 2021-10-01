@@ -4,6 +4,7 @@
 - [[IDE Setup]]
 - [[Algorithms and Pseudocode]]
 - [[Hello World]]
+- [[Anatomy of a C++ program]]
 
 
 [[C++]]
