@@ -1,5 +1,6 @@
 #include <iostream>
 #include <typeinfo>
+#include <cstdarg>
 using namespace std;
 
 
@@ -16,6 +17,31 @@ struct LibCard {
 	short int stock;
 };
 
+double average(const int count, ...) {
+	va_list ap;
+	int i;
+	double total = 0.0;
+	va_start(ap, count);
+	for (i = 0; i < count; i++) {
+		total += va_arg(ap, double);
+	}
+	va_end(ap);
+
+	return total / count;
+}
+
+int factorial(int n) {
+	if (n < 2) return 1;
+	return n * factorial(n - 1);
+}
+
+int nonrecFact(int n) {
+	int fact = 1;
+	for (int i = 1; i <= n; i++) {
+		fact *= i;
+	}
+	return fact;
+}
 int main() {
 	LibCard card1 = { "Atomic Habits", "James Clear", "Penguin", "Self", "ISBN001", "OCLC1234", 010111, 2010, 2010, 30 };
 
@@ -39,7 +65,7 @@ int main() {
 	cout << "Prime Numbers" << endl;
 	int numbers = 2;
 	int i = 1;
-	while (i <= 1000) {
+	while (i <= 10) {
 		if (numbers % 2 == 0 && numbers == 2) {
 			cout << numbers << endl;
 			i++;
@@ -60,4 +86,10 @@ int main() {
 		}
 		numbers++;
 	}
+
+	cout << average(3, 30, 40, 50) << endl;
+
+	cout << factorial(10) << endl;
+	cout << nonrecFact(10) << endl;
+	
 }
