@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "unambiguous null pointer constant.md",
+            "file": "Classes.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "NULL",
+                "query": "classes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "unambiguous null pointer constant.md",
+                "file": "Classes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
+    "Classes.md",
     "unambiguous null pointer constant.md",
     "Data Types.md",
     "auto.md",
@@ -97,7 +98,6 @@
     "Unions.md",
     "Enumerations.md",
     "Bit fields.md",
-    "references.md",
-    "Qualifiers.md"
+    "references.md"
   ]
 }
