@@ -1,0 +1,2 @@
+- provide the ability to pack multiple values into less space than they would normally take
+- `bool variable name: <number of bits>`

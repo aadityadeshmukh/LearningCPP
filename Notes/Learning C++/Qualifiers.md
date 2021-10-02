@@ -1,3 +1,21 @@
 # Qualifiers
 
+- used to adjust a quality of a variable
+- 2 types:
+	- CV (constant or volatile) qualifiers
+		- `const`
+		- `mutable`
+			- used on a data member to make it writable from const qualified member function
+		- `volatile`
+			- marks a variable that can be changed from another process
+	- storage duration qualifier
+		- define lifetime of the variable
+		- `static`
+			- variables live for the duration of the program
+			- by default variable declared outside of any block is static
+		- `register`
+			- compiler may or may not be stored in the processor register
+		- `extern`
+			- stored in a different translation unit
+			- linked with the code by the linker
 - `const`

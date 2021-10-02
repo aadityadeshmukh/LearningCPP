@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Arrays.md",
+            "file": "unambiguous null pointer constant.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "array",
+                "query": "NULL",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Arrays.md",
+                "file": "unambiguous null pointer constant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
-    "Arrays.md",
-    "Function parameters.md",
-    "Pointers.md",
-    "Qualifiers.md",
-    "Anatomy of a C++ program.md",
-    "Identifiers.md",
-    "Getting started.md",
-    "IDE Setup.md",
-    "Untitled.md",
-    "C++.md"
+    "unambiguous null pointer constant.md",
+    "Data Types.md",
+    "auto.md",
+    "void.md",
+    "Defined type.md",
+    "Unions.md",
+    "Enumerations.md",
+    "Bit fields.md",
+    "references.md",
+    "Qualifiers.md"
   ]
 }

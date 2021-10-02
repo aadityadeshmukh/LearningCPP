@@ -1,0 +1,1 @@
+- a data structure that allows you to use the same memory space for different types

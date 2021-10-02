@@ -1,0 +1,1 @@
+- escape sequences are used to access characters that either have special meaning or are nopt accesible from within the language framework

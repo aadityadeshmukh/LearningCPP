@@ -5,6 +5,7 @@
 - [[Algorithms and Pseudocode]]
 - [[Hello World]]
 - [[Anatomy of a C++ program]]
+- [[Data Types]]
 
 
 [[C++]]

@@ -1,0 +1,4 @@
+- signify lack of value
+- syntactically a type but is only used in certain circumstances
+- as a return type of as a parameter type
+- its value is to enforce a rule preventing use where a value would be expected

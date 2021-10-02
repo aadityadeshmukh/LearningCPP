@@ -1,0 +1,3 @@
+- NULL constant
+- `nullptr` keyword
+	- defined in spec as null pointer constant that can be converted to a NULL pointer value or a NULL member pointer value

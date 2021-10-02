@@ -1,0 +1,2 @@
+- works more like a constant
+- is not a type

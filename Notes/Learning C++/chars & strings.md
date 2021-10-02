@@ -1,0 +1,4 @@
+- you cannot assign a char* to a string literal
+- you need to add a const qualifier
+- defining a string literal as an array is okay but it copies the string into the array.
+	- you probably dont want to create a copy so use char* instead of char[]
