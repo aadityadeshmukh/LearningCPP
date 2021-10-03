@@ -1,4 +1,4 @@
-- vector class
+- vector template class
 - include `<vector>`
 - `vector<data type>` keyword to create a vector of said type
 - vector is a class

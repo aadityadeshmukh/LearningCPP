@@ -5,3 +5,4 @@
 
 
 [[vectors]]
+[[string]]

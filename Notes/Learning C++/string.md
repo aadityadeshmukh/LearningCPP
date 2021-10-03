@@ -1,0 +1,14 @@
+- `string`
+	- implemented as a sequence container
+- `string::iterator`
+- methods:
+	- size()
+	- length()
+	- + for concatenation
+	- == / > / <
+	- insert
+	- erase
+	- replace
+	- substr
+	- find
+	- rfind

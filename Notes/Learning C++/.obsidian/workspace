@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "vectors.md",
+            "file": "string.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "templa",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vectors.md",
+                "file": "string.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +89,8 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
+    "string.md",
+    "Standard Template library.md",
     "vectors.md",
     "Untitled.md",
     "C++.md",
@@ -95,8 +98,6 @@
     "File IO.md",
     "Templates.md",
     "Functions.md",
-    "C++ Toolchain.md",
-    "Classes.md",
-    "unambiguous null pointer constant.md"
+    "C++ Toolchain.md"
   ]
 }
