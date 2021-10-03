@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Classes.md",
+            "file": "vectors.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "classes",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Classes.md",
+                "file": "vectors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +88,15 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
+    "vectors.md",
+    "Untitled.md",
+    "C++.md",
+    "Open & Read files.md",
+    "File IO.md",
+    "Templates.md",
+    "Functions.md",
+    "C++ Toolchain.md",
     "Classes.md",
-    "unambiguous null pointer constant.md",
-    "Data Types.md",
-    "auto.md",
-    "void.md",
-    "Defined type.md",
-    "Unions.md",
-    "Enumerations.md",
-    "Bit fields.md",
-    "references.md"
+    "unambiguous null pointer constant.md"
   ]
 }

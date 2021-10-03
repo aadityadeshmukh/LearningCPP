@@ -17,3 +17,5 @@
 		- combines them into something an OS can run
 	- Runtime
 		- an executable
+
+[[Getting started]]

@@ -81,6 +81,11 @@ std::ostream& operator << (std::ostream& o, const Rational& r) {
     return o << r.string();
 }
 
+template <typename T>
+T maxof(T a, T b) {
+    return (a > b ? a : b);
+}
+
 int main() {
 
     Rational a(4, 3);        // 1 1/3
@@ -96,6 +101,9 @@ int main() {
     std::cout << 20 << " - " << a << " = " << 20 - a << std::endl;
     std::cout << 20 << " * " << a << " = " << 20 * a << std::endl;
     std::cout << 20 << " / " << a << " = " << 20 / a << std::endl;
+
+    std::cout << maxof(7, 9) << std::endl;
+    std::cout << maxof("aaa", "bbb") << std::endl;
 
     return 0;
 }

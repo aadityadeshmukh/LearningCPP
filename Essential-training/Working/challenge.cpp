@@ -1,6 +1,7 @@
 #include <iostream>
 #include <typeinfo>
 #include <cstdarg>
+#include <vector>
 using namespace std;
 
 
@@ -35,10 +36,25 @@ int factorial(int n) {
 	return n * factorial(n - 1);
 }
 
+template <typename T>
+T factorialTemplate(T n) {
+	if (n < 2) return 1;
+	return n * factorial(n - 1);
+}
+
 int nonrecFact(int n) {
 	int fact = 1;
 	for (int i = 1; i <= n; i++) {
 		fact *= i;
+	}
+	return fact;
+}
+
+template <typename T>
+T nonrecFactTemplate(T n) {
+	T fact = n;
+	while(n>1) {
+		fact *= --n;
 	}
 	return fact;
 }
@@ -91,5 +107,18 @@ int main() {
 
 	cout << factorial(10) << endl;
 	cout << nonrecFact(10) << endl;
-	
+
+	double num = 5;
+	cout << nonrecFactTemplate(num) << endl;
+
+
+	vector<int> blue = {1, 2, 3, 4};
+	cout << "Size:" << blue.size() << endl;
+	cout << "Front:" << blue.front() << endl;
+	cout << "Back:" << blue.back() << endl;
+
+	vector<int>::iterator itStart = blue.begin();
+	vector<int>::iterator itEnd = blue.end();
+	for (auto it = itStart; it < itEnd; ++it)
+		cout << *it << endl;
 }
