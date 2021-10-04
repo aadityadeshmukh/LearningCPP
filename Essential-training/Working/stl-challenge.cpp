@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 class Item {
@@ -16,11 +17,8 @@ public:
 	void setDESC(string desc);
 };
 
-Item::Item(){}
-Item::Item(int sku, string name, string desc){
-	setSKU(sku);
-	setNAME(name);
-	setDESC(desc);
+Item::Item(): _sku(0), _name(""), _desc("") {}
+Item::Item(int sku, string name, string desc) : _sku(sku), _name(name), _desc(desc){
 }
 int Item::getSKU(){
 	return _sku;
@@ -42,5 +40,16 @@ void Item::setDESC(string desc){
 }
 
 int main() {
+	// read the contents of the file
+	ifstream ifObj;
+	char buf[1024];
+	ifObj.open("D:\\Code\\LearningCPP\\Essential-training\\Working\\Debug\\items.txt");
+	while (ifObj.good()) {
+		ifObj.getline(buf, sizeof(buf));
+		cout << buf << endl;
+		// split the buffer string into tokens
+
+	}
+	ifObj.close();
 
 }
