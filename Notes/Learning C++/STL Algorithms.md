@@ -1,0 +1,59 @@
+- `algorithm` header
+- functions
+	- `sort`
+		- sorts the numbers in order
+	- `binary_search`
+		- finds the element
+	- testing conditions:
+		- `all_of`
+			- tests all the elements in a vector against a predicate functions eg. a custom is_prime functor
+		- `any_of`
+		- `none_of`
+	- Searching
+		- `find`
+			- sequential search returns the iterator of the found value else it returns end
+		- `find_if`
+			- finds the 1st item in the search criterion
+		- `find_is_not`
+		- `search`
+			- searching a sequence of values
+	- Counting
+		- `count`
+		- `count_if`
+	- Replacing
+		- `replace`
+			- 1st 2 arguments are iterators
+			-  value that needs to be replaced
+			- value to replace
+		- `replace_if`
+		- `remove`
+		- `resize`
+		- `remove_if`
+		- `unique`
+			- removes consecutive duplicates
+	- Modifying
+		- `copy`
+		- `copy_n`
+		- `copy_backward`
+		- `reverse_copy`
+		- `reverse`
+		- `fill`
+		- `fill_n`
+		- `generate`
+		- `random_shuffle`
+			- depricated with C++17
+	- Partitions
+		- rearrange the container so that the elements that meet the criteria are at the beginning
+	- sorting
+		- `sort`
+		- `stable_sort`
+	- Merge
+		- merging 2 sorted sequences into 1 sorted sequence
+		- `merge`
+	- Binary search
+		- `binary_search`
+			- returns a boolean value
+		- `lower_bound`
+		- `upper_bound`
+		- `equal_range`
+			

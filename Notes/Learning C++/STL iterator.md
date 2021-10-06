@@ -1,0 +1,30 @@
+- An iterator is an STL object that can iterate through a container
+- Acts a lot like a pointer	
+	- can be dereferenced
+	- can be incremented
+- iterator class is defined in the scope of the container class
+- bound to the type of the container
+- auto works and is preferred
+- Types:
+	- input
+		- used for reading activities
+		- it can
+			- read not write
+			- increment but not decrement
+			- once a value is read it cannot be read again
+			- example: `istream_iterator`
+			- defined in `iterator` header
+	- output
+		- !input iterator
+		- constucted with a separator
+		- 
+	- Forward
+		- combination of a input and output iterator
+		- `forward_list` is a single linked list type
+			- designed to iterate from beginning to end but not the reversse
+			- range based for loop uses a forward iterator
+	- Bidirectional
+		- Forward iterator + it can iterate from back to front
+	- Random Access
+		- used to access any element at any position in a container
+		- provides all the functionality of a C-pointer

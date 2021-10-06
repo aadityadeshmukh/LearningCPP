@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Open & Read files.md",
+            "file": "Web Servers & APIs using C++.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ifstream",
+                "query": "standa",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Open & Read files.md",
+                "file": "Web Servers & APIs using C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +88,15 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
-    "Open & Read files.md",
-    "string.md",
-    "Standard Template library.md",
-    "vectors.md",
+    "Web Servers & APIs using C++.md",
+    "Building Websites.md",
     "Untitled.md",
-    "C++.md",
-    "File IO.md",
-    "Templates.md",
-    "Functions.md",
-    "C++ Toolchain.md"
+    "STL Algorithms.md",
+    "Standard Template library.md",
+    "STL Functions.md",
+    "STL Transformations.md",
+    "STL iterator.md",
+    "STL.md",
+    "STL containers.md"
   ]
 }

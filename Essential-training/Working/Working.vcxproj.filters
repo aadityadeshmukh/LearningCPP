@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stl-challenge.cpp">
+    <ClCompile Include="stl-containers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

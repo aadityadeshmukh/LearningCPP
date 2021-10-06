@@ -6,3 +6,11 @@
 
 [[vectors]]
 [[string]]
+
+
+[[STL containers]]
+[[STL iterator]]
+[[STL Transformations]]
+[[STL Functions]]
+[[STL Algorithms]]
+[[Standard Library]]

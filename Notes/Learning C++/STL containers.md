@@ -1,0 +1,71 @@
+# STL containers
+
+- Vectors
+	- Sequence container
+	- Holds objects in strict sequential order
+	- include the `<vector>` header
+	- initialized using standard template syntax `<>` will hold type
+	- initializer list - C++11 and later
+	- methods:
+		- `size`
+		- `front`
+		- `back`
+		- `[]`
+		- `.at()`
+		- `insert` - we pass a begin iterator 
+		- `erase`
+		- `push_back`
+		- `pop_back`
+		- `empty`
+		- `clear`
+		- constructor
+		- copy constructor
+		- move constructor - move all elements from vector 4 to 5
+		- optimized for random access
+- List
+	- sequence container like vector
+	- optimized for rapid insert and delete operations
+	- do not support random access
+	- fast & lean
+- Pair and Tuple
+	- pair 
+		- `utility` header
+		- `pair<type 1, type 2>`
+	- tuple
+		- `tuple` header
+		- container with multiple value  type stored together 
+- Array
+	- fixed size sequence container
+	- c++11
+	- 
+- Deque
+	- double ended queue
+	- has semantics of a vector
+	- optimized for rapid push and pop
+	- `push_back`
+	- `pop_back`
+	- `push_front`
+	- `pop_front`
+	- default container for stacks and queue
+- Queue
+	- pushed from back
+	- popped from front
+	- adapter container that adapts an underline container into a FIFO queue
+- Stack
+	- LIFO queue
+	- adapter container
+- Set
+	- holds a sorted set of elements
+	- multi set allows duplicates
+	- set does not
+	- unordered_set will not sort
+		- it will have an undefined order based on hashes
+		- search is quicker
+- Maps
+	- sorted list of key value pairs like an associative array
+	- elements in a map is a pair
+	- key - value pair
+	- access
+		- ["key"]
+		- at("key")
+		- find("key")

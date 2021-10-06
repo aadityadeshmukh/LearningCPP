@@ -1,0 +1,9 @@
+body{
+    background-color: bisque;
+    display:grid;
+    justify-items: center;
+    align-items: center;
+}
+img{
+    width: 50%;
+}
