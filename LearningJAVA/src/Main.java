@@ -15,14 +15,21 @@ public class Main {
         System.out.println(studentName + " has a GPA of " + GPA);
 
         Scanner input = new Scanner(System.in);
-        GPA = input.nextDouble();
+        //GPA = input.nextDouble();
 
         System.out.println("New GPA: " + GPA);
 
-        int num = input.nextInt();
-        if(num < 5)
-            System.out.println("Enjoy your great fortune");
-        else
-            System.out.println("Shoe");
+        //int num = input.nextInt();
+        //if(num < 5)
+            //System.out.println("Enjoy your great fortune");
+        //else
+            //System.out.println("Shoe");
+        Scanner scan = new Scanner(System.in);
+        boolean isOnRepeat = true;
+        while(isOnRepeat){
+            System.out.println("Playing Current Song");
+            System.out.print("Repeat? ");
+            isOnRepeat = scan.nextBoolean();
+        }
     }
 }
