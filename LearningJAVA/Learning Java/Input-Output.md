@@ -1,0 +1,3 @@
+- `input = new Scanner(System.in)`
+- create a new Scanner which will look for input on System.in
+- `input.next()` / `input.nextInt` etc...

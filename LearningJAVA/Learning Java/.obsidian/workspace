@@ -1,29 +1,32 @@
 {
   "main": {
-    "id": "3c1bda961fc2de5a",
+    "id": "55f85e64406ad5da",
     "type": "split",
     "children": [
       {
-        "id": "166ce15c68b43a62",
+        "id": "ae126fa892bcf82c",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Input-Output.md",
+            "mode": "source"
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "954d4b69e5ba4ee7",
+    "id": "ba73c17885622364",
     "type": "split",
     "children": [
       {
-        "id": "d7da66bcd807441b",
+        "id": "5b333a9713f5435f",
         "type": "tabs",
         "children": [
           {
-            "id": "3ecdff3dc56fa2f8",
+            "id": "eed9be6fb12de23b",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -31,12 +34,12 @@
             }
           },
           {
-            "id": "afbfda6cd3b6e15f",
+            "id": "5ade84d0e9f98d6d",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "standa",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -52,19 +55,20 @@
     "width": 300
   },
   "right": {
-    "id": "8a99ebf5e94057a4",
+    "id": "98c67317a784f895",
     "type": "split",
     "children": [
       {
-        "id": "97bbb7fd63e46721",
+        "id": "76b61f26a543a3df",
         "type": "tabs",
         "children": [
           {
-            "id": "a585fcea7801a1ac",
+            "id": "ccc6104838166bb7",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Input-Output.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "166ce15c68b43a62",
+  "active": "ae126fa892bcf82c",
   "lastOpenFiles": [
-    "Web Servers & APIs using C++.md",
-    "Building Websites.md",
-    "Untitled.md",
-    "STL Algorithms.md",
-    "Standard Template library.md",
-    "STL Functions.md",
-    "STL Transformations.md",
-    "STL iterator.md",
-    "STL.md",
-    "STL containers.md"
+    "Input-Output.md",
+    "Foundations.md",
+    "Data Types.md",
+    "Java.md",
+    "Getting Started.md",
+    "Classes.md",
+    "Functions.md",
+    "Debugging.md",
+    "Control Flow.md",
+    "Untitled.md"
   ]
 }
