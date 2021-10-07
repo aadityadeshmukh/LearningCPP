@@ -1,35 +1,26 @@
 import java.util.Scanner;
 
+import static java.lang.Math.pow;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, from IntelliJ");
-        int age = 15;
-        double GPA = 3.46;
-        char firstInitial = 'a';
-        char lastInitial = 'b';
-        boolean perfectAttendance = false;
-        System.out.println(GPA);
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
 
-        String studentName = "Aditya";
-        System.out.println(studentName.charAt(0));
-        System.out.println(studentName + " has a GPA of " + GPA);
-
-        Scanner input = new Scanner(System.in);
-        //GPA = input.nextDouble();
-
-        System.out.println("New GPA: " + GPA);
-
-        //int num = input.nextInt();
-        //if(num < 5)
-            //System.out.println("Enjoy your great fortune");
-        //else
-            //System.out.println("Shoe");
-        Scanner scan = new Scanner(System.in);
-        boolean isOnRepeat = true;
-        while(isOnRepeat){
-            System.out.println("Playing Current Song");
-            System.out.print("Repeat? ");
-            isOnRepeat = scan.nextBoolean();
+            String opString = "";
+            int calc = a;
+            for(int j = 0; j < n ; j++){
+                calc += (int)(pow(2,j) * b);
+                System.out.println(calc);
+                opString += calc + " ";
+            }
+            //System.out.println(opString);
         }
+        in.close();
+
     }
 }
