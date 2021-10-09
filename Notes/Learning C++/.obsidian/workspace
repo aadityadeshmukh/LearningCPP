@@ -7,8 +7,11 @@
         "id": "166ce15c68b43a62",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "For.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -36,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "standa",
+                "query": "for loop",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -45,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "For.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,6 +89,8 @@
   },
   "active": "166ce15c68b43a62",
   "lastOpenFiles": [
+    "For.md",
+    "Flow Of Control.md",
     "Web Servers & APIs using C++.md",
     "Building Websites.md",
     "Untitled.md",
@@ -91,8 +98,6 @@
     "Standard Template library.md",
     "STL Functions.md",
     "STL Transformations.md",
-    "STL iterator.md",
-    "STL.md",
-    "STL containers.md"
+    "STL iterator.md"
   ]
 }
